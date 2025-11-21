@@ -6,6 +6,7 @@ function gotoAbout() {
   const element = document.getElementById('about');
   element.scrollIntoView();
 }
+// updated
 function gotoSkill() {
   const element = document.getElementById('skill');
   element.scrollIntoView();
