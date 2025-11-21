@@ -1,239 +1,275 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>My Porfolio Website - Adhitya Sukma</title>
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <link href="assets/css/aos3.0.0-beta.6.css" rel="stylesheet">
-    <link href="assets/css/style.css" rel="stylesheet">
-</head>
-<body>
-<!--Navbar-->
-<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-info shadow-sm">
-    <div class="container">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+    <link href="assets/css/aos3.0.0-beta.6.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!--Navbar-->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-info shadow-sm">
+      <div class="container">
         <a class="navbar-brand" href="#">Adhitya Sukma</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="javascript:void(0);"
-                       onclick="gotoHome()">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="javascript:void(0);" onclick="gotoAbout()">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="javascript:void(0);" onclick="gotoProject()">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="javascript:void(0);" onclick="gotoContact()">Contact</a>
-                </li>
-            </ul>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="javascript:void(0);" onclick="gotoHome()">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0);" onclick="gotoSkill()">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0);" onclick="gotoPortfolio()">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0);" onclick="gotoContact()">Contact</a>
+            </li>
+          </ul>
         </div>
-    </div>
-</nav>
-<!--Akhir Navbar-->
+      </div>
+    </nav>
+    <!--Akhir Navbar-->
 
-<!--Title About-->
-<section id="home" class="jumbotron text-center typewriter">
-    <img src="assets/img/foto_saya.jpg" width="200" alt="adhitya sukma"
-         class="rounded-circle img-thumbnail">
-    <h1 class="display-4">Adhitya Sukma</h1>
-    <p class="lead"></p>
-    <!--    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,96L34.3,117.3C68.6,139,137,181,206,176C274.3,171,343,117,411,112C480,107,549,149,617,176C685.7,203,754,213,823,186.7C891.4,160,960,96,1029,80C1097.1,64,1166,96,1234,117.3C1302.9,139,1371,149,1406,154.7L1440,160L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>-->
-    <div id="about">
+    <!--Title Skill-->
+    <section id="home" class="jumbotron text-center typewriter">
+      <img src="assets/img/foto_saya.jpg" width="200" alt="adhitya sukma" class="rounded-circle img-thumbnail" />
+      <h1 class="display-4">Adhitya Sukma</h1>
+      <p class="lead"></p>
+      <!--    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,96L34.3,117.3C68.6,139,137,181,206,176C274.3,171,343,117,411,112C480,107,549,149,617,176C685.7,203,754,213,823,186.7C891.4,160,960,96,1029,80C1097.1,64,1166,96,1234,117.3C1302.9,139,1371,149,1406,154.7L1440,160L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>-->
+      <div id="skill">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#ffffff" fill-opacity="1"
-                  d="M0,192L34.3,170.7C68.6,149,137,107,206,112C274.3,117,343,171,411,186.7C480,203,549,181,617,160C685.7,139,754,117,823,117.3C891.4,117,960,139,1029,154.7C1097.1,171,1166,181,1234,186.7C1302.9,192,1371,192,1406,192L1440,192L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path>
+          <path
+            fill="#ffffff"
+            fill-opacity="1"
+            d="M0,192L34.3,170.7C68.6,149,137,107,206,112C274.3,117,343,171,411,186.7C480,203,549,181,617,160C685.7,139,754,117,823,117.3C891.4,117,960,139,1029,154.7C1097.1,171,1166,181,1234,186.7C1302.9,192,1371,192,1406,192L1440,192L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
+          ></path>
         </svg>
-    </div>
-</section>
-<!--Akhir Title About-->
-<!--About-->
-<section>
-    <div class="container">
-        <div class="row mb-3 text-center">
-            <div class="col">
-                <h2>About Me</h2>
-            </div>
+      </div>
+    </section>
+    <!--Akhir Title Skill-->
+    <!--Skill-->
+    <section>
+      <div class="container">
+        <div class="row mb-3">
+          <div class="col">
+            <h2>Skill</h2>
+          </div>
         </div>
-        <div class="row justify-content-center fs-5 text-center">
-            <div class="col-md-12">
-                <p>Hello, my name is Adhitya Sukma from Indonesia</p>
-                <p>I am a graduate of S1 Information Systems. I am a WordPress Web Developer and Codeigniter Web Developer with more than 7 years of experience.</p>
-            </div>
-        </div>
-    </div>
-    <div id="projects">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#ecf9ff" fill-opacity="1"
-                  d="M0,96L48,117.3C96,139,192,181,288,170.7C384,160,480,96,576,101.3C672,107,768,181,864,208C960,235,1056,213,1152,170.7C1248,128,1344,64,1392,32L1440,0L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-        </svg>
-    </div>
-</section>
-<!--Akhir About-->
-
-<!--Projects-->
-<section class="my-jumbotron">
-    <div class="container">
-        <div class="row mb-3 justify-content-end">
-            <div class="col-md-12 text-center">
-                <h2>Some of my projects</h2>
-            </div>
+        <div class="row mb-3">
+          <div class="col">
+            <h2 class="fw-bold">Front-End</h2>
+          </div>
         </div>
         <div class="row justify-content-center fs-5">
-            <div class="col-md-4 mb-3">
-                <div class="card">
-                    <img src="assets/img/my-projects/1.png" class="card-img-top" alt="Project 1">
-                    <div class="card-body">
-                        <p class="card-text">Plugin EDD Hide Show Product - 2022</p>
-                        <p class="card-text">Wordpress</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-3">
-                <div class="card">
-                    <img src="assets/img/my-projects/2.png" class="card-img-top" alt="Project 2">
-                    <div class="card-body">
-                        <p class="card-text">Plugin EleKits - 2022</p>
-                        <p class="card-text">Wordpress</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-3">
-                <div class="card">
-                    <img src="assets/img/my-projects/3.png" class="card-img-top" alt="Project 3">
-                    <div class="card-body">
-                        <p class="card-text">Plugin Woo Custom Opt-In Form - 2019</p>
-                        <p class="card-text">Wordpress</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-3">
-                <div class="card">
-                    <img src="assets/img/my-projects/4.png" class="card-img-top" alt="Project 4">
-                    <div class="card-body">
-                        <p class="card-text">Plugin Woo Custom Thank You Page - 2020</p>
-                        <p class="card-text">Wordpress</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-3">
-                <div class="card">
-                    <img src="assets/img/my-projects/5.png" class="card-img-top" alt="Project 5">
-                    <div class="card-body">
-                        <p class="card-text">Plugin Commercioo - 2021</p>
-                        <p class="card-text">Wordpress</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-3">
-                <div class="card">
-                    <img src="assets/img/my-projects/6.png" class="card-img-top" alt="Project 6">
-                    <div class="card-body">
-                        <p class="card-text">Plugin Easy Digital Downloads JVZoo - 2019</p>
-                        <p class="card-text">Wordpress</p>
-                    </div>
-                </div>
-            </div>
+          <div class="col-md-12">
+            <ol>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>CSS Frameworks: Bootstrap</li>
+              <li>Javascript</li>
+              <li>JavaScript Frameworks: Angular dan Vue.js</li>
+              <li>Git</li>
+              <li>Package Manager (Untuk install dependencies): npm</li>
+              <li>REST API & JSON</li>
+            </ol>
+          </div>
         </div>
-    </div>
-    <div id="contact">
+        <div class="row mb-3">
+          <div class="col">
+            <h2 class="fw-bold">Back-End</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center fs-5">
+          <div class="col-md-12">
+            <ol>
+              <li>PHP</li>
+              <li>Framework: Laravel dan CodeIgniter</li>
+              <li>MySQL</li>
+              <li>Redis</li>
+              <li>REST API</li>
+              <li>Autentikasi & Otorisasi seperti: JWT (JSON Web Token), API Key, OAuth2 dan lainnya</li>
+              <li>Docker</li>
+              <li>Linux (Ubuntu)</li>
+            </ol>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col">
+            <h2 class="fw-bold">Wordpress</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center fs-5">
+          <div class="col-md-12">
+            <ol>
+              <li>Plugins</li>
+              <li>Themes</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div id="portfolio">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#ffffff" fill-opacity="1"
-                  d="M0,96L34.3,106.7C68.6,117,137,139,206,122.7C274.3,107,343,53,411,58.7C480,64,549,128,617,144C685.7,160,754,128,823,128C891.4,128,960,160,1029,165.3C1097.1,171,1166,149,1234,133.3C1302.9,117,1371,107,1406,101.3L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path>
+          <path
+            fill="#ecf9ff"
+            fill-opacity="1"
+            d="M0,96L48,117.3C96,139,192,181,288,170.7C384,160,480,96,576,101.3C672,107,768,181,864,208C960,235,1056,213,1152,170.7C1248,128,1344,64,1392,32L1440,0L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+          ></path>
         </svg>
-    </div>
-</section>
-<!--Akhir Projects-->
-<!--Contact Me-->
-<section>
-    <div class="container">
+      </div>
+    </section>
+    <!--Akhir Skill-->
+
+    <!--portfolio-->
+    <section class="my-jumbotron">
+      <div class="container">
+        <div class="row mb-3 justify-content-end">
+          <div class="col-md-12">
+            <h2>Some of my portfolio</h2>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col">
+            <h2 class="fw-bold">Github Repository / Projects Framework CodeIgninter</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center fs-5">
+          <div class="col-md-12">
+            <ol>
+              <li><a href="https://github.com/adhityasukma/sims-ppob-adhitya-sukma">SIMS PPOB - Adhitya Sukma</a></li>
+              <li><a href="https://github.com/adhityasukma/ci4-simple-crud-rest-api">Simple CRUD Rest API</a></li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <div class="col">
+            <h2 class="fw-bold">Github Repository / Projects Framework Laravel</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center fs-5">
+          <div class="col-md-12">
+            <ol>
+              <li><a href="https://github.com/adhityasukma/laravel-backend-api-test-case">Laravel Backend Test Case</a></li>
+            </ol>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col">
+            <h2 class="fw-bold">Github Repository / Projects Wordpress</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center fs-5">
+          <div class="col-md-12">
+            <ol>
+              <li><a href="https://github.com/adhityasukma/applicant-form-submission">Wordpress Plugin Applicant Form Submission</a></li>
+              <li><a href="https://github.com/adhityasukma/smartpay-tripay">Wordpress Plugin Addon Smartpay - Smartpay Tripay</a></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div id="contact">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#ffffff"
+            fill-opacity="1"
+            d="M0,96L34.3,106.7C68.6,117,137,139,206,122.7C274.3,107,343,53,411,58.7C480,64,549,128,617,144C685.7,160,754,128,823,128C891.4,128,960,160,1029,165.3C1097.1,171,1166,149,1234,133.3C1302.9,117,1371,107,1406,101.3L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
+          ></path>
+        </svg>
+      </div>
+    </section>
+    <!--Akhir Projects-->
+    <!--Contact Me-->
+    <section>
+      <div class="container">
         <div class="row mb-3 text-center">
-            <div class="col">
-                <p>
-                    If you have a project that will be working on, you can discuss it with me by writing the message below:
-                </p>
-                <h2>Contact Me</h2>
-            </div>
+          <div class="col">
+            <p>If you have a project that will be working on, you can discuss it with me by writing the message below:</p>
+            <h2>Contact Me</h2>
+          </div>
         </div>
         <div class="row justify-content-center">
-            <div class="col-md-6">
-                <div class="alert-pesan-portfolio"></div>
-                <form name="adhitya-portfolio-contact-form">
-                    <div class="mb-3">
-                        <label for="name" class="form-label">Full name</label>
-                        <input type="text" class="form-control" name="nama" id="name" aria-describedby="name">
-                    </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" name="email" id="email" aria-describedby="email">
-                    </div>
-                    <div class="mb-3">
-                        <label for="pesan" class="form-label">Message</label>
-                        <textarea class="form-control" name="pesan" id="pesan" rows="3"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-kirim">Send Message</button>
-                    <button class="btn btn-primary btn-loading d-none" type="button" disabled>
-                        <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-                        Loading...
-                    </button>
-                </form>
-            </div>
+          <div class="col-md-6">
+            <div class="alert-pesan-portfolio"></div>
+            <form name="adhitya-portfolio-contact-form">
+              <div class="mb-3">
+                <label for="name" class="form-label">Full name</label>
+                <input type="text" class="form-control" name="nama" id="name" aria-describedby="name" />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" name="email" id="email" aria-describedby="email" />
+              </div>
+              <div class="mb-3">
+                <label for="pesan" class="form-label">Message</label>
+                <textarea class="form-control" name="pesan" id="pesan" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-kirim">Send Message</button>
+              <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Loading...
+              </button>
+            </form>
+          </div>
         </div>
-    </div>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#0d6efd" fill-opacity="1"
-              d="M0,64L34.3,85.3C68.6,107,137,149,206,186.7C274.3,224,343,256,411,229.3C480,203,549,117,617,117.3C685.7,117,754,203,823,208C891.4,213,960,139,1029,133.3C1097.1,128,1166,192,1234,218.7C1302.9,245,1371,235,1406,229.3L1440,224L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path>
-    </svg>
-</section>
-<!--Akhir Contact Me-->
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#0d6efd"
+          fill-opacity="1"
+          d="M0,64L34.3,85.3C68.6,107,137,149,206,186.7C274.3,224,343,256,411,229.3C480,203,549,117,617,117.3C685.7,117,754,203,823,208C891.4,213,960,139,1029,133.3C1097.1,128,1166,192,1234,218.7C1302.9,245,1371,235,1406,229.3L1440,224L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!--Akhir Contact Me-->
 
-<!--Footer-->
-<footer class="bg-primary text-white pb-5 text-center">
-    <p>Created <?php echo date("Y");?> with
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-heart-fill"
-             viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+    <!--Footer-->
+    <footer class="bg-primary text-white pb-5 text-center">
+      <p>
+        Created
+        <?php echo date("Y");?>
+        with
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
         </svg>
-        by <a class="text-white fw-bold" href="https://t.me/adhitya_s" target="_blank">Adhitya Sukma</a></p>
-</footer>
-<!--Akhir Footer-->
-<script src="assets/js/bootstrap.bundle.min.js"
-        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-        crossorigin="anonymous"></script>
-<!--AOS-->
-<script src="assets/js/aos3.0.0-beta.6.js"></script>
-<!--Akhir AOS-->
-<script>
-    AOS.init();
-</script>
-<!--GASP-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/TextPlugin.min.js"></script>
-<script>
-    gsap.registerPlugin(TextPlugin);
-    gsap.to(".lead", {
+        by <a class="text-white fw-bold" href="https://t.me/adhitya_s" target="_blank">Adhitya Sukma</a>
+      </p>
+    </footer>
+    <!--Akhir Footer-->
+    <script src="assets/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <!--AOS-->
+    <script src="assets/js/aos3.0.0-beta.6.js"></script>
+    <!--Akhir AOS-->
+    <script>
+      AOS.init();
+    </script>
+    <!--GASP-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/TextPlugin.min.js"></script>
+    <script>
+      gsap.registerPlugin(TextPlugin);
+      gsap.to('.lead', {
         duration: 2,
         delay: 1.5,
-        text: "Web Development",
-        delimiter: " "
-    });
-</script>
-<!--Akhir GASP-->
-<script src="assets/js/myscript.js"></script>
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbyUKmFaRXh8VbRWZXdq7iy5WX49Ftn0YP9C9mbxjtSnH9AH0_P-jJGU6qQfo94Rxkz-WA/exec'
-    const form = document.forms['adhitya-portfolio-contact-form']
-    const btnKirim = document.querySelector(".btn-kirim");
-    const btnLoading = document.querySelector(".btn-loading");
-    const alertPesanHtml = document.querySelector(".alert-pesan-portfolio");
-    var htmlPesanSuccess = '  <div class="alert alert-success alert-dismissible alert-pesan fade show d-none" role="alert">\n' +
+        text: 'Web Development',
+        delimiter: ' ',
+      });
+    </script>
+    <!--Akhir GASP-->
+    <script src="assets/js/myscript.js"></script>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbyUKmFaRXh8VbRWZXdq7iy5WX49Ftn0YP9C9mbxjtSnH9AH0_P-jJGU6qQfo94Rxkz-WA/exec';
+      const form = document.forms['adhitya-portfolio-contact-form'];
+      const btnKirim = document.querySelector('.btn-kirim');
+      const btnLoading = document.querySelector('.btn-loading');
+      const alertPesanHtml = document.querySelector('.alert-pesan-portfolio');
+      var htmlPesanSuccess =
+        '  <div class="alert alert-success alert-dismissible alert-pesan fade show d-none" role="alert">\n' +
         '                    <strong>Terimakasih!</strong> Pesan anda sudah saya terima.\n' +
         '                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>\n' +
         '                </div>' +
@@ -242,32 +278,31 @@
         '                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>\n' +
         '                </div>';
 
-
-    form.addEventListener('submit', e => {
+      form.addEventListener('submit', (e) => {
         e.preventDefault();
-        btnLoading.classList.toggle("d-none");
-        btnKirim.classList.toggle("d-none");
-        fetch(scriptURL, {method: 'POST', body: new FormData(form)})
-            .then(response => {
-                alertPesanHtml.innerHTML = htmlPesanSuccess;
-                const alertPesan = document.querySelector(".alert-pesan");
-                btnLoading.classList.toggle("d-none");
-                btnKirim.classList.toggle("d-none");
-                alertPesan.classList.toggle("d-none");
-                form.reset();
-                console.log('Success!', response)
-            })
-            .catch(error => {
-                alertPesanHtml.innerHTML = htmlPesanSuccess;
-                const alertPesanError = document.querySelector(".alert-pesan-error");
-                btnLoading.classList.toggle("d-none");
-                btnKirim.classList.toggle("d-none");
-                if (alertPesanError.classList.contains("d-none")) {
-                    alertPesanError.classList.remove("d-none");
-                }
-                console.error('Error!', error.message)
-            })
-    })
-</script>
-</body>
+        btnLoading.classList.toggle('d-none');
+        btnKirim.classList.toggle('d-none');
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+          .then((response) => {
+            alertPesanHtml.innerHTML = htmlPesanSuccess;
+            const alertPesan = document.querySelector('.alert-pesan');
+            btnLoading.classList.toggle('d-none');
+            btnKirim.classList.toggle('d-none');
+            alertPesan.classList.toggle('d-none');
+            form.reset();
+            console.log('Success!', response);
+          })
+          .catch((error) => {
+            alertPesanHtml.innerHTML = htmlPesanSuccess;
+            const alertPesanError = document.querySelector('.alert-pesan-error');
+            btnLoading.classList.toggle('d-none');
+            btnKirim.classList.toggle('d-none');
+            if (alertPesanError.classList.contains('d-none')) {
+              alertPesanError.classList.remove('d-none');
+            }
+            console.error('Error!', error.message);
+          });
+      });
+    </script>
+  </body>
 </html>
