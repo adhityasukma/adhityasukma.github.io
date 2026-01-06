@@ -3,252 +3,333 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>My Porfolio Website - Adhitya Sukma</title>
-    <link href="./public/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+    <meta name="description" content="Adhitya Sukma - Web Developer specializing in Laravel, Vue.js, and WordPress development" />
+    <meta name="keywords" content="web developer, laravel, vue.js, php, wordpress, indonesia" />
+    <meta name="author" content="Adhitya Sukma" />
+    <title>Adhitya Sukma | PHP Web Developer (Laravel and Wordpress)</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./public/img/favicon.ico" />
+    
+    <!-- CSS -->
+    <link href="./public/css/bootstrap.min.css" rel="stylesheet" />
     <link href="./public/css/aos3.0.0-beta.6.css" rel="stylesheet" />
     <link href="./public/css/style.css" rel="stylesheet" />
   </head>
   <body>
-    <!--Navbar-->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-info shadow-sm">
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
       <div class="container">
-        <a class="navbar-brand" href="#">Adhitya Sukma</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="javascript:void(0);" onclick="gotoHome()">Home</a>
+              <a class="nav-link active" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0);" onclick="gotoSkill()">Skills</a>
+              <a class="nav-link" href="#skills">Skills</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0);" onclick="gotoPortfolio()">Portfolio</a>
+              <a class="nav-link" href="#portfolio">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0);" onclick="gotoContact()">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <!--Akhir Navbar-->
 
-    <!--Title Skill-->
-    <section id="home" class="jumbotron text-center typewriter">
-      <img src="./public/img/foto_saya.jpg" width="200" alt="adhitya sukma" class="rounded-circle img-thumbnail" />
-      <h1 class="display-4">Adhitya Sukma</h1>
-      <p class="lead"></p>
-      <!--    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,96L34.3,117.3C68.6,139,137,181,206,176C274.3,171,343,117,411,112C480,107,549,149,617,176C685.7,203,754,213,823,186.7C891.4,160,960,96,1029,80C1097.1,64,1166,96,1234,117.3C1302.9,139,1371,149,1406,154.7L1440,160L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>-->
-      <div id="skill">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-          <path
-            fill="#ffffff"
-            fill-opacity="1"
-            d="M0,192L34.3,170.7C68.6,149,137,107,206,112C274.3,117,343,171,411,186.7C480,203,549,181,617,160C685.7,139,754,117,823,117.3C891.4,117,960,139,1029,154.7C1097.1,171,1166,181,1234,186.7C1302.9,192,1371,192,1406,192L1440,192L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
-          ></path>
-        </svg>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <!-- Animated Orbs -->
+      <div class="hero-orb hero-orb-1"></div>
+      <div class="hero-orb hero-orb-2"></div>
+      <div class="hero-orb hero-orb-3"></div>
+      
+      <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+        <img src="./public/img/foto_saya.jpg" alt="Adhitya Sukma" class="hero-image" />
+        <h1 class="hero-title">
+          Hi, I'm <span class="gradient-text">Adhitya Sukma</span>
+        </h1>
+        <p class="hero-subtitle lead"></p>
+        <p class="hero-description">
+          A passionate Web Developer with expertise in building modern, 
+          scalable web applications using Laravel, Vue.js, and WordPress.
+        </p>
+        <div class="hero-buttons">
+          <a href="#portfolio" class="btn-primary-custom">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+            View My Work
+          </a>
+          <a href="#contact" class="btn-secondary-custom">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            Contact Me
+          </a>
+        </div>
+        <div class="social-links">
+          <a href="https://github.com/adhityasukma" target="_blank" class="social-link" title="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/adhitya-sukma-4499a2197/" target="_blank" class="social-link" title="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+          <a href="https://t.me/adhitya_s" target="_blank" class="social-link" title="Telegram">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+          </a>
+        </div>
       </div>
     </section>
-    <!--Akhir Title Skill-->
-    <!--Skill-->
-    <section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section section-dark">
       <div class="container">
-        <div class="row mb-3">
-          <div class="col">
-            <h2>Skill</h2>
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-badge">What I Do</span>
+          <h2 class="gradient-text">Skills & Expertise</h2>
+          <p class="section-subtitle">
+            Technologies and tools I use to bring ideas to life
+          </p>
+        </div>
+        
+        <div class="skills-grid">
+          <!-- Frontend -->
+          <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-category-icon">💻</div>
+            <h3 class="skill-category-title">Frontend Development</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">HTML5</span>
+              <span class="skill-tag">CSS3</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">Vue.js</span>
+              <span class="skill-tag">Bootstrap</span>
+              <span class="skill-tag">Tailwind CSS</span>
+              <span class="skill-tag">REST API</span>
+            </div>
+          </div>
+          
+          <!-- Backend -->
+          <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+            <div class="skill-category-icon">⚙️</div>
+            <h3 class="skill-category-title">Backend Development</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">PHP</span>
+              <span class="skill-tag">Laravel</span>
+              <span class="skill-tag">CodeIgniter</span>
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">Redis</span>
+              <span class="skill-tag">JWT Auth</span>
+              <span class="skill-tag">OAuth2</span>
+            </div>
+          </div>
+          
+          <!-- DevOps & Tools -->
+          <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+            <div class="skill-category-icon">🛠️</div>
+            <h3 class="skill-category-title">DevOps & Tools</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">Linux</span>
+              <span class="skill-tag">NPM</span>
+              <span class="skill-tag">WordPress</span>
+              <span class="skill-tag">API Development</span>
+            </div>
           </div>
         </div>
-        <div class="row mb-3">
-          <div class="col">
-            <h2 class="fw-bold">Front End</h2>
-          </div>
-        </div>
-        <div class="row justify-content-center fs-5">
-          <div class="col-md-12">
-            <ol>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>CSS Frameworks: Bootstrap</li>
-              <li>Javascript</li>
-              <li>JavaScript Frameworks: Angular dan Vue.js</li>
-              <li>Git</li>
-              <li>Package Manager (Untuk install dependencies): npm</li>
-              <li>REST API & JSON</li>
-            </ol>
-          </div>
-        </div>
-        <div class="row mb-3">
-          <div class="col">
-            <h2 class="fw-bold">Back End</h2>
-          </div>
-        </div>
-        <div class="row justify-content-center fs-5">
-          <div class="col-md-12">
-            <ol>
-              <li>PHP</li>
-              <li>Framework: Laravel dan CodeIgniter</li>
-              <li>MySQL</li>
-              <li>Redis</li>
-              <li>REST API</li>
-              <li>Autentikasi & Otorisasi seperti: JWT (JSON Web Token), API Key, OAuth2 dan lainnya</li>
-              <li>Docker</li>
-              <li>Linux (Ubuntu)</li>
-            </ol>
-          </div>
-        </div>
-        <div class="row mb-3">
-          <div class="col">
-            <h2 class="fw-bold">Wordpress</h2>
-          </div>
-        </div>
-        <div class="row justify-content-center fs-5">
-          <div class="col-md-12">
-            <ol>
-              <li>Plugins</li>
-              <li>Themes</li>
-            </ol>
-          </div>
-        </div>
-      </div>
-      <div id="portfolio">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-          <path
-            fill="#ecf9ff"
-            fill-opacity="1"
-            d="M0,96L48,117.3C96,139,192,181,288,170.7C384,160,480,96,576,101.3C672,107,768,181,864,208C960,235,1056,213,1152,170.7C1248,128,1344,64,1392,32L1440,0L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-          ></path>
-        </svg>
       </div>
     </section>
-    <!--Akhir Skill-->
 
-    <!--portfolio-->
-    <section class="my-jumbotron">
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section">
       <div class="container">
-        <div class="row mb-3 justify-content-end">
-          <div class="col-md-12">
-            <h2>Some of my portfolio</h2>
-          </div>
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-badge">My Work</span>
+          <h2 class="gradient-text">Featured Projects</h2>
+          <p class="section-subtitle">
+            A collection of projects I've worked on
+          </p>
         </div>
-        <div class="row mb-3">
-          <div class="col">
-            <h2 class="fw-bold">Github Repository / Projects Framework CodeIgninter</h2>
+        
+        <div class="portfolio-grid">
+          <!-- Project 1 -->
+          <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="project-image">
+              <img src="./public/img/my-projects/2.png" alt="SIMS PPOB" />
+              <div class="project-overlay">
+                <a href="https://github.com/adhityasukma/sims-ppob-adhitya-sukma" target="_blank" class="btn-primary-custom">View Project</a>
+              </div>
+            </div>
+            <div class="project-content">
+              <span class="project-category">CodeIgniter</span>
+              <h3 class="project-title">Sistem Informasi Manajemen Service – Payment Point Online Bank (PPOB)</h3>
+              <p class="project-description">
+                System/Application to manage various bill payment services online.
+              </p>
+              <div class="project-tech">
+                <span class="tech-badge">PHP</span>
+                <span class="tech-badge">CodeIgniter</span>
+                <span class="tech-badge">MySQL</span>
+              </div>
+              <a href="https://github.com/adhityasukma/sims-ppob-adhitya-sukma" target="_blank" class="project-link">
+                View on GitHub
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+              </a>
+            </div>
           </div>
-        </div>
-        <div class="row justify-content-center fs-5">
-          <div class="col-md-12">
-            <ol>
-              <li><a href="https://github.com/adhityasukma/sims-ppob-adhitya-sukma">SIMS PPOB - Adhitya Sukma</a></li>
-              <li><a href="https://github.com/adhityasukma/ci4-simple-crud-rest-api">Simple CRUD Rest API</a></li>
-            </ol>
-          </div>
-        </div>
+          
+          <!-- Project 2 -->
+          <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="project-image">
+              <img src="./public/img/my-projects/3.png" alt="Simple Clinic Management System" />
+            </div>
+            <div class="project-content">
+              <span class="project-category">Laravel</span>
+              <h3 class="project-title">Simple Clinic Management System</h3>
+              <p class="project-description">
+                Clinic Management System (CMS) is an integrated software solution designed to manage and automate the daily operations of a clinic or healthcare facility.
 
-        <div class="row mb-3">
-          <div class="col">
-            <h2 class="fw-bold">Github Repository / Projects Framework Laravel</h2>
+It helps clinics streamline administrative, medical, and financial processes by centralizing patient data and improving workflow efficiency.
+              </p>
+              <div class="project-tech">
+                <span class="tech-badge">PHP</span>
+                <span class="tech-badge">Laravel</span>
+                <span class="tech-badge">MySQL</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Project 3 -->
+          <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="project-image">
+              <img src="./public/img/my-projects/4.jpg" alt="Commercioo" />
+            </div>
+            <div class="project-content">
+              <span class="project-category">Wordpress</span>
+              <h3 class="project-title">Wordpress PLugins / Themes Commercioo</h3>
+              <p class="project-description">
+                Seamless ecommerce solution for your business
+              </p>
+              <div class="project-tech">
+                <span class="tech-badge">PHP</span>
+                <span class="tech-badge">Wordpress</span>
+                <span class="tech-badge">MySQL</span>
+                <span class="tech-badge">Rest API</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Project 4 -->
+          <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="project-image">
+              <img src="./public/img/my-projects/5.png" alt="Web Portfolio" />
+            </div>
+            <div class="project-content">
+              <span class="project-category">Laravel</span>
+              <h3 class="project-title">Web Portfolio</h3>
+              <p class="project-description">
+                A personal portfolio website that highlights skills, projects, and professional experience.
+              </p>
+              <div class="project-tech">
+                <span class="tech-badge">PHP</span>
+                <span class="tech-badge">Laravel</span>
+                <span class="tech-badge">Vue.JS</span>
+                <span class="tech-badge">Vite</span>
+                <span class="tech-badge">MySQL</span>
+                <span class="tech-badge">Tailwind CSS</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Project 5 -->
+          <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="project-image">
+              <img src="./public/img/my-projects/6.png" alt="Boarding House Management System" />
+            </div>
+            <div class="project-content">
+              <span class="project-category">React | Next.js</span>
+              <h3 class="project-title">Boarding House Management System</h3>
+              <p class="project-description">
+                A boarding house management system designed to manage tenants, rooms, payments, and rental administration efficiently.
+              </p>
+              <div class="project-tech">
+                <span class="tech-badge">Next.js</span>
+                <span class="tech-badge">React</span>
+                <span class="tech-badge">TypeScript</span>
+                <span class="tech-badge">Vanilla CSS</span>
+                <span class="tech-badge">Prisma</span>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="row justify-content-center fs-5">
-          <div class="col-md-12">
-            <ol>
-              <li><a href="https://github.com/adhityasukma/laravel-backend-api-test-case">Laravel Backend Test Case</a></li>
-            </ol>
-          </div>
-        </div>
-        <div class="row mb-3">
-          <div class="col">
-            <h2 class="fw-bold">Github Repository / Projects Wordpress</h2>
-          </div>
-        </div>
-        <div class="row justify-content-center fs-5">
-          <div class="col-md-12">
-            <ol>
-              <li><a href="https://github.com/adhityasukma/applicant-form-submission">Wordpress Plugin Applicant Form Submission</a></li>
-              <li><a href="https://github.com/adhityasukma/smartpay-tripay">Wordpress Plugin Addon Smartpay - Smartpay Tripay</a></li>
-            </ol>
-          </div>
-        </div>
-      </div>
-      <div id="contact">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-          <path
-            fill="#ffffff"
-            fill-opacity="1"
-            d="M0,96L34.3,106.7C68.6,117,137,139,206,122.7C274.3,107,343,53,411,58.7C480,64,549,128,617,144C685.7,160,754,128,823,128C891.4,128,960,160,1029,165.3C1097.1,171,1166,149,1234,133.3C1302.9,117,1371,107,1406,101.3L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
-          ></path>
-        </svg>
       </div>
     </section>
-    <!--Akhir Projects-->
-    <!--Contact Me-->
-    <section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-dark">
       <div class="container">
-        <div class="row mb-3 text-center">
-          <div class="col">
-            <p>If you have a project that will be working on, you can discuss it with me by writing the message below:</p>
-            <h2>Contact Me</h2>
-          </div>
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-badge">Get In Touch</span>
+          <h2 class="gradient-text">Contact Me</h2>
+          <p class="section-subtitle">
+            Have a project in mind? Let's discuss it together!
+          </p>
         </div>
-        <div class="row justify-content-center">
-          <div class="col-md-6">
-            <div class="alert-pesan-portfolio"></div>
-            <form name="adhitya-portfolio-contact-form">
-              <div class="mb-3">
-                <label for="name" class="form-label">Full name</label>
-                <input type="text" class="form-control" name="nama" id="name" aria-describedby="name" />
-              </div>
-              <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" name="email" id="email" aria-describedby="email" />
-              </div>
-              <div class="mb-3">
-                <label for="pesan" class="form-label">Message</label>
-                <textarea class="form-control" name="pesan" id="pesan" rows="3"></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary btn-kirim">Send Message</button>
-              <button class="btn btn-primary btn-loading d-none" type="button" disabled>
-                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-                Loading...
-              </button>
-            </form>
-          </div>
+        
+        <!-- Contact Options -->
+        <div class="contact-options" data-aos="fade-up" data-aos-delay="100">
+          <a href="mailto:adhityamedia@gmail.com" class="contact-option-card">
+            <div class="contact-option-icon">📧</div>
+            <h3>Email</h3>
+          </a>
+          <a href="https://wa.me/6285217864254" target="_blank" class="contact-option-card">
+            <div class="contact-option-icon">💬</div>
+            <h3>WhatsApp</h3>
+          </a>
+          <a href="https://t.me/adhitya_s" target="_blank" class="contact-option-card">
+            <div class="contact-option-icon">✈️</div>
+            <h3>Telegram</h3>
+          </a>
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#0d6efd"
-          fill-opacity="1"
-          d="M0,64L34.3,85.3C68.6,107,137,149,206,186.7C274.3,224,343,256,411,229.3C480,203,549,117,617,117.3C685.7,117,754,203,823,208C891.4,213,960,139,1029,133.3C1097.1,128,1166,192,1234,218.7C1302.9,245,1371,235,1406,229.3L1440,224L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
-        ></path>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 15l-6-6-6 6"/>
       </svg>
-    </section>
-    <!--Akhir Contact Me-->
+    </button>
 
-    <!--Footer-->
-    <footer class="bg-primary text-white pb-5 text-center">
-      <p>
-        Created
-        <?php echo date("Y");?>
-        with
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
-          <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
-        </svg>
-        by <a class="text-white fw-bold" href="https://t.me/adhitya_s" target="_blank">Adhitya Sukma</a>
-      </p>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-social">
+            <a href="https://github.com/adhityasukma" target="_blank" class="social-link" title="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/adhitya-sukma-4499a2197/" target="_blank" class="social-link" title="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+            <a href="https://t.me/adhitya_s" target="_blank" class="social-link" title="Telegram">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+            </a>
+          </div>
+          <p class="footer-copyright">
+            © <span id="currentYear"></span> Made with <span class="heart-icon">❤️</span> by 
+            <a href="https://t.me/adhitya_s" target="_blank">Adhitya Sukma</a>
+          </p>
+        </div>
+      </div>
     </footer>
-    <!--Akhir Footer-->
-    <script src="./public/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-    <!--AOS-->
+
+    <!-- Scripts -->
+    <script src="./public/js/bootstrap.bundle.min.js"></script>
     <script src="./public/js/aos3.0.0-beta.6.js"></script>
-    <!--Akhir AOS-->
-    <script>
-      AOS.init();
-    </script>
-    <!--GASP-->
+    <script>AOS.init({ once: true, duration: 800 });</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/TextPlugin.min.js"></script>
     <script>
@@ -256,52 +337,31 @@
       gsap.to('.lead', {
         duration: 2,
         delay: 1.5,
-        text: 'Web Development',
+        text: 'PHP Web Developer (Laravel and Wordpress)',
         delimiter: ' ',
       });
     </script>
-    <!--Akhir GASP-->
     <script src="./public/js/myscript.js"></script>
     <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbyUKmFaRXh8VbRWZXdq7iy5WX49Ftn0YP9C9mbxjtSnH9AH0_P-jJGU6qQfo94Rxkz-WA/exec';
-      const form = document.forms['adhitya-portfolio-contact-form'];
-      const btnKirim = document.querySelector('.btn-kirim');
-      const btnLoading = document.querySelector('.btn-loading');
-      const alertPesanHtml = document.querySelector('.alert-pesan-portfolio');
-      var htmlPesanSuccess =
-        '  <div class="alert alert-success alert-dismissible alert-pesan fade show d-none" role="alert">\n' +
-        '                    <strong>Terimakasih!</strong> Pesan anda sudah saya terima.\n' +
-        '                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>\n' +
-        '                </div>' +
-        '<div class="alert alert-warning alert-dismissible alert-pesan-error fade show d-none" role="alert">\n' +
-        '                    <strong>Gagal kirim pesan!</strong> Silahkan coba kembali.\n' +
-        '                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>\n' +
-        '                </div>';
-
-      form.addEventListener('submit', (e) => {
-        e.preventDefault();
-        btnLoading.classList.toggle('d-none');
-        btnKirim.classList.toggle('d-none');
-        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-          .then((response) => {
-            alertPesanHtml.innerHTML = htmlPesanSuccess;
-            const alertPesan = document.querySelector('.alert-pesan');
-            btnLoading.classList.toggle('d-none');
-            btnKirim.classList.toggle('d-none');
-            alertPesan.classList.toggle('d-none');
-            form.reset();
-            console.log('Success!', response);
-          })
-          .catch((error) => {
-            alertPesanHtml.innerHTML = htmlPesanSuccess;
-            const alertPesanError = document.querySelector('.alert-pesan-error');
-            btnLoading.classList.toggle('d-none');
-            btnKirim.classList.toggle('d-none');
-            if (alertPesanError.classList.contains('d-none')) {
-              alertPesanError.classList.remove('d-none');
-            }
-            console.error('Error!', error.message);
-          });
+      // Set current year
+      document.getElementById('currentYear').textContent = new Date().getFullYear();
+      
+      // Scroll to Top Button
+      const scrollToTopBtn = document.getElementById('scrollToTop');
+      
+      window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 300) {
+          scrollToTopBtn.classList.add('visible');
+        } else {
+          scrollToTopBtn.classList.remove('visible');
+        }
+      });
+      
+      scrollToTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
       });
     </script>
   </body>
